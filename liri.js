@@ -58,9 +58,15 @@ function liri(cmd, term) {
         //do-what-it-says case
         case "do-what-it-says":
 
-            //calling separate doingIt function
-            console.log("\nDoing what it says (what even is 'it?')....");
-            doingIt();
+            //adding command to log.txt
+            fs.appendFile("log.txt", "do-what-it-says\n\n", function (err) {
+                if (err) throw err;
+                
+                //calling separate doingIt function
+                console.log("\nDoing what it says (what even is 'it?')....");
+                doingIt();
+
+            })    
             break;
 
         //in case user doesn't type anything, or types something incompatible
