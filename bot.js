@@ -55,6 +55,32 @@ var BOT = function () {
                 console.log(err);
             });
     }
+
+    this.findMovie = function (movie) {
+        var URL = "https://www.omdbapi.com/?apikey=trilogy&t=" + movie + "&y&type=movie&plot=short";
+        axios.get(URL).then(
+            function (response) {
+                var json = response.data;
+
+                var data = [
+                    "Title: " + json.Title,
+                    "Released: " + json.Year,
+                    "IMDB Rating: " + json.Ratings[0].Value,
+                    "Rotten Tomatoes Rating: " + json.Ratings[1].Value,
+                    "Country: " + json.Country,
+                    "Language: " + json.Language,
+                    "Plot: " + json.Plot,
+                    "Actors: " + json.Actors,
+                ].join("\n\n");
+
+                console.log(data);
+
+                // fs.appendFile("log.txt", "concert-this " + artist + "\n\n" + data + divider, function (err) {
+                //     if (err) throw err;
+                //     console.log(data);
+                // })
+            })
+    }
 }
 
 module.exports = BOT;

@@ -21,7 +21,12 @@ switch (cmd) {
         }
         break;
     case "movie-this":
-        console.log("\nSearching for " + term + " on IMDB...");
+        if (!term) {
+            bot.findMovie("Mr. Nobody");
+        } else {
+            console.log("\nSearching for " + term + " on OMDB...");
+            bot.findMovie(term)
+        }
         break;
     case "do-what-it-says":
         console.log("\nRunning the command from random.txt...\n");
