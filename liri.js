@@ -13,7 +13,12 @@ switch (cmd) {
         bot.findArtist(term);
         break;
     case "spotify-this-song":
-        console.log("\nSearching for " + term + " on Spotify...\n");
+        if (!term) {
+            bot.findSong("The Sign Ace of Base");
+        } else {
+            console.log("\nSearching for " + term + " on Spotify...\n");
+            bot.findSong(term);
+        }
         break;
     case "movie-this":
         console.log("\nSearching for " + term + " on IMDB...");
