@@ -1,4 +1,4 @@
-# LIRI Bot (Language Interpretation and Recognition Interface) 
+# LIRI (Language Interpretation and Recognition Interface) Bot  
 
 LIRI Bot is a command line node app that takes in parameters to display artists' shows from bandsintown, songs from Spotify, or movie information from OMDB. All inputs and outputs are stored in a log.txt file. This is my sixth project for the UCSD Full Stack Web Developer Bootcamp and showcases my understanding of node.js, constructors, modularization, axios, and npm.
 
