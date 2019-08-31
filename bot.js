@@ -73,12 +73,10 @@ var BOT = function () {
                     "Actors: " + json.Actors,
                 ].join("\n\n");
 
-                console.log(data);
-
-                // fs.appendFile("log.txt", "concert-this " + artist + "\n\n" + data + divider, function (err) {
-                //     if (err) throw err;
-                //     console.log(data);
-                // })
+                fs.appendFile("log.txt", "movie-this " + movie + "\n\n" + data + divider, function (err) {
+                    if (err) throw err;
+                    console.log(data);
+                })
             })
     }
 }

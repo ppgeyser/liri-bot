@@ -27,3 +27,22 @@ Album: Yankee Hotel Foxtrot
 Preview: https://p.scdn.co/mp3-preview/f0be3e4391b1c65468aa9deb6fd506396ab9fed3?cid=ba3b07aa4ad94fc0a123cc612d7a0073
 ====================================================================================
 
+movie-this the matrix
+
+Title: The Matrix
+
+Released: 1999
+
+IMDB Rating: 8.7/10
+
+Rotten Tomatoes Rating: 88%
+
+Country: USA
+
+Language: English
+
+Plot: A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
+
+Actors: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+====================================================================================
+
