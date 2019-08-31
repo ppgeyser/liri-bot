@@ -1,8 +1,6 @@
-require("dotenv").config();
+var BOT = require('./bot');
 
-var keys = require("./keys.js");
-
-// var spotify = new Spotify(keys.spotify);
+var bot = new BOT();
 
 var input = process.argv;
 
@@ -12,6 +10,7 @@ var term = input.slice(3).join(" ");
 switch (cmd) {
     case "concert-this":
         console.log("Searching for " + term + "'s next show");
+        bot.findArtist(term);
         break;
     case "spotify-this-song":
         console.log("Searching for " + term + " on Spotify");
