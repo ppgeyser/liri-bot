@@ -9,17 +9,17 @@ var term = input.slice(3).join(" ");
 
 switch (cmd) {
     case "concert-this":
-        console.log("Searching for " + term + "'s next show");
+        console.log("\nSearching for " + term + "'s next show...\n");
         bot.findArtist(term);
         break;
     case "spotify-this-song":
-        console.log("Searching for " + term + " on Spotify");
+        console.log("\nSearching for " + term + " on Spotify...\n");
         break;
     case "movie-this":
-        console.log("Searching for " + term + " on IMDB");
+        console.log("\nSearching for " + term + " on IMDB...");
         break;
     case "do-what-it-says":
-        console.log("Running the command from random.txt");
+        console.log("\nRunning the command from random.txt...\n");
         break;
     default:
         console.log("Not a valid command");
