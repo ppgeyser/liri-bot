@@ -7,7 +7,7 @@ LIRI Bot is a command line node app that takes in parameters to display artists'
 **Command**|**Search Term**|**Example**|**Description**
 :-----:|:-----:|:-----:|:-----:
 concert-this|"band name"|node liri.js concert-this Blink-182|Displays the location, venue, and date of the band's next show.
-spotify-this-song|"song title"|node liri.js Goodbye Yellow Brick Road|Display song information from Spotify. The default song is "The Sign" if no value is entered via the command line.
+spotify-this-song|"song title"|node liri.js spotify-this-song Goodbye Yellow Brick Road|Display song information from Spotify. The default song is "The Sign" if no value is entered via the command line.
 movie-this|"movie title"|node liri.js movie-this Blade Runner 2049|Display movie information from OMDB. The default movie is "Mr. Nobody" if no search term is entered.
 do-what-it-says|-|node liri.js do-what-it-says|Run whatever command and value are saved to the random.txt stored in the commands directory
 
