@@ -1,6 +1,6 @@
 # LIRI (Language Interpretation and Recognition Interface) Bot  
 
-LIRI Bot is a command line node app that takes in parameters to display artists' shows from bandsintown, songs from Spotify, or movie information from OMDB. All inputs and outputs are stored in a log.txt file. This is my sixth project for the UCSD Full Stack Web Developer Bootcamp and showcases my understanding of node.js, constructors, modularization, axios, and npm.
+LIRI Bot is a command line node app that takes in parameters to display artists' shows from bandsintown, songs from Spotify, or movie information from OMDB. All inputs and outputs are stored in a log.txt file.
 
 ### LIRI Commands
 
@@ -24,3 +24,6 @@ do-what-it-says|-|node liri.js do-what-it-says|Run whatever command and value ar
 In order to safeguard our personal Spotify developer keys required for the API call, we used the dotenv package to create environment variables that stored the client ID and client secret. You will need to create a .env app and supply your own Spotify developer credentials in order to make this app work. 
 
 Otherwise, you should be able to clone the repo, run npm install to grab necessary dependancies, and then start using the app!
+
+This is my first backend project using node.js and showcases my understanding of constructors, modularization, axios, and npm.
+
